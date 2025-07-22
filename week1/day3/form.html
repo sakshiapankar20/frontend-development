@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title: HTML form</title>
+</head>
+<body>
+    <h1>Sign Up form</h1>
+
+    <form action="/submit" method="post">
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="fullname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="useremail" id="email"><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" name="password" id="pass">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female"></label>
+
+        <label for="hobby">Hobbies:</label>
+        <input type="checkbox" name="hobby" value="reading">Reading <br>
+        <input type="checkbox" name="hobby" value="music">Music <br>
+        <input type="checkbox" name="hobby" value="sports">Sports <br><br>
+
+
+        <label for="city">Select your city:</label>
+        <select name="city" id="city">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nashik">Nashik</option>
+
+        </select><br><br>
+
+        <label for="message">Your Message:</label>
+        <textarea name="message" id="message" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
