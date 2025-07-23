@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(235, 235, 235);
+             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+
+        .container{
+            width: 500px;;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 10px 20px rgb(220, 219, 219);
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            /* height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        h1{
+            color:rgb(17, 17, 17);
+        }
+        
+        .quote{
+            margin: 25px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(192, 155, 243);
+            padding: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:20px;
+            font-style: oblique;
+            color: rgb(69, 69, 99);
+            box-shadow: 4px 6px 6px rgb(138, 2, 138);
+            font-weight: bolder;
+        }
+
+        button{
+            background-color: rgb(41, 41, 246);
+            padding: 13px;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px rgb(90, 207, 246);
+            margin: 20px;
+            cursor:pointer;
+            font-size: 17px;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <div class="quote">
+            Stars can't shine without darkness
+        </div>
+        <button onclick="getQuote()">Get New Quote</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const quotes=["Kindness is the language of the heart","Be a voice not an echo","Just be you and that's enough", "Life is short make it sweet", "If you can dream it you can do it" ,"It's gonna be worth it", "Be a warrior not a worrier", "If you never try, you'll never know","small steps every day","Trust the process","If you work, It will work","The struggle is the part of the story"]
+        function getQuote(){
+            const quote=document.getElementsByClassName("quote")[0];
+
+           const randomIndex=Math.floor(Math.random()*quotes.length);
+
+           quote.innerHTML=quotes[randomIndex];
+            
+            
+        }
+    </script>
+</body>
+</html>
