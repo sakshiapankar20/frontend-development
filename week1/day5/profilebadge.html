@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile badge</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: rgb(178, 222, 249);
+    }
+
+    .profile-badge{
+        background-color: rgb(229, 243, 251);
+        border: 4px solid rgb(117, 117, 244);
+        color: rgb(65, 42, 214);
+        width:140px;
+        height:80px;
+        border-radius: 90px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-style: italic;
+        font-weight: bolder;
+        transition: transform 0.2s ease-in-out;
+
+
+    }
+    .profile-badge:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+
+
+
+<body>
+    
+    <div class="profile-badge">
+        Hi Sakshi! 😊
+
+    </div>
+
+    <div style="height: 1000px;"></div>
+</body>
+</html>

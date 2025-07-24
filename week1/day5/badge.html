@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Badge</title>
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+   <style>
+    body {
+  margin: 0;
+  height: 2000px; /* just to show scroll behavior */
+  background-color: #b3e5fc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #512da8;
+  padding: 15px 20px;
+  border: 2px solid #7e57c2;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+  <div class="badge">
+    <p>Hi Sakshi! 😊</p>
+  </div>
+</body>
+</html>
