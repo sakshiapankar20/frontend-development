@@ -91,11 +91,22 @@
 
 
     <script>
-        const quotes=["Kindness is the language of the heart","Be a voice not an echo","Just be you and that's enough", "Life is short make it sweet", "If you can dream it you can do it" ,"It's gonna be worth it", "Be a warrior not a worrier", "If you never try, you'll never know","small steps every day","Trust the process","If you work, It will work","The struggle is the part of the story"]
+        const quotes=["Kindness is the language of the heart","Be a voice not an echo","Just be you and that's enough", "Life is short make it sweet", "If you can dream it you can do it" ,"It's gonna be worth it", "Be a warrior not a worrier", "If you never try, you'll never know","small steps every day","Trust the process","If you work, It will work","The struggle is the part of the story"];
+
+        let lastIndex=-1;
+
         function getQuote(){
             const quote=document.getElementsByClassName("quote")[0];
 
-           const randomIndex=Math.floor(Math.random()*quotes.length);
+            let randomIndex;
+
+            do{
+                 randomIndex=Math.floor(Math.random()*quotes.length);
+            }while(randomIndex === lastIndex);
+
+            lastIndex=randomIndex;
+
+          
 
            quote.innerHTML=quotes[randomIndex];
             
